@@ -77,12 +77,17 @@
         background: transparent;
         border: 0;
         font-size: 0;
+        transition: filter 0.2s;
 
         &.playButton {
             width: 4rem;
             height: 4rem;
             border-radius: 50%;
             background: var(--purple-400);
+        }
+
+        &:hover {
+            filter: opacity(0.5);
         }
     }
 }
